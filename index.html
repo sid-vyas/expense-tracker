@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="summary-bar">
+            <div class="summary-card">
+                <p class="card-label">Balance</p>
+                <p class="card-value white" id = "balance">$0</p>
+            </div>
+            <div class="summary-card">
+                <p class="card-label">Spendings</p>
+                <p class="card-value red" id = "spendings">$0</p>
+            </div>
+            <div class="summary-card">
+                <p class="card-label">Earnings</p>
+                <p class="card-value green" id="earnings">$0</p>
+            </div>
+
+        </div>
+
+        <div class="charts-row">
+
+        </div>
+
+        <div class="transactions-list">
+            <h4>TRANSACTIONS:</h4>
+            <ul id="transactions-ul">
+                <!-- <li class="list-item">
+                    <div class="list-icon">
+
+                    </div>
+                    <div class="list-description">
+                       <div class ="list-label"></div> 
+                       <div class = "list-date"></div>
+                    </div>
+                    <div class="list-amount">
+                    
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+
+        <div class="transaction-form">
+            <h4>ADD TRANSACTION:</h4>
+            <form id="add-form">
+                <input type="text" id="description" placeholder="Description">
+                <input type="number" id="amount" placeholder="Amount">
+                <select id="type">
+                    <option value="spending">Spending</option>
+                    <option value="earning">Earning</option>
+                </select>
+                <button>Add Transaction</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

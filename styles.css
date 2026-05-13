@@ -1,0 +1,40 @@
+.summary-card {
+    background-color: grey;
+    padding: 10px;
+    margin: 10px;
+    flex:auto;
+    border-radius: 10px;
+}
+
+.list-description {
+    flex:1;
+}
+
+.list-item {
+    display: flex;
+}
+
+.list-icon {
+    width: 10px;
+    height: 10px;
+    color: aqua;
+}
+
+.summary-bar{
+    display: flex;
+}
+
+.card-label {
+    font-weight: bold;
+    font-size: medium;
+}
+
+
+.card-value {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.white { color: white;}
+.green { color: green;}
+.red { color: red;}
