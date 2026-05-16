@@ -6,7 +6,11 @@ const transactionList = document.getElementById('transactions-ul')
 const balanceEl = document.getElementById('balance')
 const spendingsEl = document.getElementById('spendings')
 const earningsEl = document.getElementById('earnings')
-let transactions = [];
+let transactions = JSON.parse(localStorage.getItem('transactions')) || []
+
+for(let transaction of transactions) {
+    addTransactionToList(transaction)
+}
 
 updateTransactions()
 
@@ -55,6 +59,8 @@ function updateTransactions() {
     balanceEl.innerHTML = `$${balance}`
     spendingsEl.innerText = `$${spendings}`
     earningsEl.innerText = `$${earnings}`
+
+    localStorage.setItem('transactions', JSON.stringify(transactions))
 
 }
 
