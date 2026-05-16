@@ -1,9 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
 .summary-card {
-    background-color: grey;
-    padding: 10px;
+    background-color: #2c2c3e;
+    padding: 20px;
     margin: 10px;
-    flex:auto;
-    border-radius: 10px;
+    flex: 1;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.transactions-list {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.transactions-list h4 {
+    color: #aaa;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
 }
 
 .list-description {
@@ -12,27 +48,104 @@
 
 .list-item {
     display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
 }
 
-.list-icon {
-    width: 10px;
-    height: 10px;
-    color: aqua;
+.list-item:last-child {
+    border-bottom: none;
 }
 
-.summary-bar{
+.list-label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.list-date {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 3px;
+}
+
+.delete-button {
+    background: none;
+    border: none;
+    color: #ccc;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+
+.delete-button:hover {
+    background-color: #fee2e2;
+    color: #e53e3e;
+}
+
+.list-amount {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.summary-bar {
     display: flex;
+    margin: 0 -10px;
 }
 
 .card-label {
-    font-weight: bold;
-    font-size: medium;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 8px;
 }
 
 
 .card-value {
     font-size: x-large;
     font-weight: bold;
+}
+
+.transaction-form {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.transaction-form h4 {
+    color: #aaa;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.transaction-form form {
+    display: flex;
+    gap: 10px;
+}
+
+.transaction-form input,
+.transaction-form select {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    flex: 1;
+}
+
+.transaction-form button {
+    padding: 10px 20px;
+    background-color: #2c2c3e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.transaction-form button:hover {
+    background-color: #444466;
 }
 
 .white { color: white;}
